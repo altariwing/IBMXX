@@ -1,0 +1,49 @@
+<%@page contentType = "text/html; charset=Big5 " pageEncoding = "Big5" %>
+<!DOCTYPE html>
+
+<head>
+    <title> HTML template ~slushie is great* </title>
+    <meta charset="utf-8">
+    <meta name="description" content="basic html template">
+    <meta name="author" content="Eira/author is still alive">
+    <meta name="keywords" content="html,template">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="slushie.png">
+    <link rel="stylesheet" href="css/cssfile.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
+    <script src="js/jsfile.js"></script>
+</head>
+
+<body>
+111111
+<table border="1" bordercolor="deeppink">
+<% for(int i=1 ; i<10 ; i++) {%>
+<tr>
+	<% for (int j =1; j<10;j++) { %>
+
+    <td> <%= i %> * <%= j %> = <%= i*j %> </td> 
+    <% } %>
+</tr>
+<% } %>   
+</table>   
+  
+ <br>
+ 
+ <table border="1" bordercolor="deeppink">
+<% for(int i=1 ; i<10 ; i++) {%>
+<tr>
+	<% for (int j =1; j<10;j++) { %>
+
+    <td> <%= j %> * <%= i %> = <%= i*j %> </td> 
+    <% } %>
+</tr>
+<% } %>   
+</table>   
+
+<br>
+<%= request.getParameter("username")%><br>
+${param.username}
+<br>   
+</body>
+
+</html>
